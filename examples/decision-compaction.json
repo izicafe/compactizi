@@ -1,0 +1,13 @@
+{
+  "provider": {
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "model": "jev-latest",
+    "apiKeyEnv": "TYPESAFE_API_KEY",
+    "maxRequestTokens": 30000,
+    "timeoutMs": 30000
+  },
+  "thresholds": { "keepExact": 0.8, "retain": 0.7, "drop": 0.95, "conflicting": 0.35 },
+  "targetTokens": 30000,
+  "summaryInputTokens": 6000,
+  "summaryOutputTokens": 900
+}

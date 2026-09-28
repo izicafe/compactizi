@@ -1,0 +1,12 @@
+{
+  "name": "pi-decision-compaction",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["pi-package"],
+  "pi": { "extensions": ["./src/extension.ts"] },
+  "scripts": { "test": "node --import tsx --test tests/*.test.ts", "check": "tsc --noEmit", "eval": "node --import tsx scripts/evaluate.ts" },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "*" },
+  "devDependencies": { "@earendil-works/pi-coding-agent": "^0.87.1", "tsx": "^4.20.0", "typescript": "^5.9.0", "@types/node": "^22.0.0" }
+}

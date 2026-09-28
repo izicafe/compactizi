@@ -1,0 +1,15 @@
+{
+  "messages": [
+    { "role": "user", "content": "Never modify database schema." },
+    { "role": "toolResult", "toolName": "bash", "content": [{ "type": "text", "text": "Old build log: green" }] },
+    { "role": "user", "content": "Implement auth; fix assertion src/auth/session.ts:401." }
+  ],
+  "tail": [{ "role": "user", "content": "Continue auth." }],
+  "nativeSummary": "User requested auth and no database schema changes. Old build passed. Assertion src/auth/session.ts:401 remains.",
+  "decisions": [
+    { "id": "m0", "probabilities": { "relevant_to_active_task": 0.2, "contains_persistent_constraint": 0.99, "contains_unresolved_work": 0.1, "requires_exact_preservation": 0.95, "useful_but_summarizable": 0.1, "safe_to_drop": 0.01 } },
+    { "id": "m1", "probabilities": { "relevant_to_active_task": 0.01, "contains_persistent_constraint": 0.01, "contains_unresolved_work": 0.01, "requires_exact_preservation": 0.01, "useful_but_summarizable": 0.01, "safe_to_drop": 0.99 } },
+    { "id": "m2", "probabilities": { "relevant_to_active_task": 0.99, "contains_persistent_constraint": 0.1, "contains_unresolved_work": 0.9, "requires_exact_preservation": 0.1, "useful_but_summarizable": 0.8, "safe_to_drop": 0.01 } }
+  ],
+  "summaries": { "m2": "Implement auth; fix assertion src/auth/session.ts:401." }
+}
